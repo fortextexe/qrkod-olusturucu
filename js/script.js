@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var container = document.getElementById('container');
     container.style.backgroundColor = 'rgba(30, 30, 30, 0.3)';
     container.style.padding = '30px';
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
     input.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.3)';
     input.style.transition = 'box-shadow 0.3s ease';
 
-    input.addEventListener('focus', function() {
+    input.addEventListener('focus', function () {
         input.style.boxShadow = '0 0 10px 2px rgba(255, 255, 255, 0.8)';
     });
 
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
     button.style.cursor = 'pointer';
     button.style.transition = 'background-color 0.3s ease, color 0.3s ease';
 
-    button.addEventListener('mouseover', function() {
+    button.addEventListener('mouseover', function () {
         button.style.backgroundColor = '#f4f4f4';
         button.style.color = '#000';
     });
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
     downloadButton.style.width = '100%';
     downloadButton.style.display = 'none';
 
-    downloadButton.addEventListener('mouseover', function() {
+    downloadButton.addEventListener('mouseover', function () {
         downloadButton.style.backgroundColor = '#f4f4f4';
         downloadButton.style.color = '#000';
     });
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
     footerLink.style.fontWeight = 'bold';
     footerLink.style.transition = 'color 0.3s ease';
 
-    footerLink.addEventListener('mouseover', function() {
+    footerLink.addEventListener('mouseover', function () {
         footerLink.style.textDecoration = 'underline';
     });
 });

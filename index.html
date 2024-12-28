@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Kod Oluşturucu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="header">
+            <div class="logo"></div>
+            <h1>QRVerve</h1>
+        </div>
+        <input type="text" id="data-input" placeholder="Metin veya URL girin" />
+        <button onclick="generateQRCode()">
+            <i class="fas fa-qrcode"></i> QR Kod Oluştur
+        </button>
+        <div id="loading-message">Yükleniyor...</div>
+        <canvas id="qr-canvas"></canvas>
+        <button id="download-btn" onclick="downloadQRCode()">
+            <i class="fas fa-download"></i> QR Kod İndir
+        </button>
+        <div class="footer">
+            <p id="year">© <span id="current-year"></span> <strong><a href="https://www.fortextdev.xyz" target="_blank">Førtext</a></strong> tarafından geliştirilmiştir.</p>
+        </div>
+    </div>
+    <div id="preloader">
+        <div class="spinner"></div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <p>Yükleniyor...</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
